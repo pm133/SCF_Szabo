@@ -20,16 +20,16 @@ typedef unsigned int UINT32;
 
 typedef enum
 {
-	FALSE = 0,
-	TRUE
+  FALSE = 0,
+  TRUE
 } BOOLEAN;
 
 //Print levels
 typedef enum
 {
-	PRINT_NONE = 0,						//No printing
-	PRINT_CONV_RESULTS_ONLY,	//Print only the final converged results
-	PRINT_ALL									//Print everything.
+  PRINT_NONE = 0,           //No printing
+  PRINT_CONV_RESULTS_ONLY,  //Print only the final converged results
+  PRINT_ALL                 //Print everything.
 } PRINT_LEVELS;
 
 PRINT_LEVELS print_level;
@@ -44,21 +44,21 @@ typedef enum
 {
   H_MAT_ID = 0,
   S_MAT_ID,
-	G_MAT_ID,
-	P_MAT_ID,
-	E_MAT_ID,
-	C_MAT_ID,
-	F_MAT_ID,
-	OLDP_MAT_ID,
-	FPRIME_MAT_ID,
-	CPRIME_MAT_ID,
-	X_MAT_ID,
-	XT_MAT_ID,
-	MULLIKEN_MAT_ID,
-	TEMP_2D_MAT_ID,
+  G_MAT_ID,
+  P_MAT_ID,
+  E_MAT_ID,
+  C_MAT_ID,
+  F_MAT_ID,
+  OLDP_MAT_ID,
+  FPRIME_MAT_ID,
+  CPRIME_MAT_ID,
+  X_MAT_ID,
+  XT_MAT_ID,
+  MULLIKEN_MAT_ID,
+  TEMP_2D_MAT_ID,
 
-	//ALWAYS MAKE THIS THE LAST LINE
-	LAST_MAT_ID
+  //ALWAYS MAKE THIS THE LAST LINE
+  LAST_MAT_ID
   
 } MATRIX_ID;
 

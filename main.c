@@ -1,18 +1,18 @@
 ///////////////////////////////////////////////////
 //
-//	Program created by Paul Murphy
-//	
-//	This is a C program version of the 
-//	the sample SCF Calculation found in Appendix B
-//	of Modern Quantum Chemistry, Introduction to 
-//	Advanced Electronic Structure Theory by 
-//	A. Szabo and N. Ostlund (originally written in 
-//	Fortran IV). Comments and feedback are welcome
-//	by email - juansanshoo@hotmail.co.uk.
+//  Program created by Paul Murphy
+//  
+//  This is a C program version of the 
+//  the sample SCF Calculation found in Appendix B
+//  of Modern Quantum Chemistry, Introduction to 
+//  Advanced Electronic Structure Theory by 
+//  A. Szabo and N. Ostlund (originally written in 
+//  Fortran IV). Comments and feedback are welcome
+//  by email - juansanshoo@hotmail.co.uk.
 //
-//	MAIN.C
-//	------
-//	Version History: 1.0 - 31/12/2015
+//  MAIN.C
+//  ------
+//  Version History: 1.0 - 31/12/2015
 //
 ///////////////////////////////////////////////////
 
@@ -39,28 +39,28 @@ double zb = 1.0; //nuclear charge of atom B
 void main(void)
 {
 
-	printf("Welcome to the C version of the Szabo/Ostlund SCF software from the book Modern Quantum Chemistry.\n");
-	printf("\n*****Version 1.0. C version created by Paul Murphy pm133@hotmail.co.uk*****\n");
+  printf("Welcome to the C version of the Szabo/Ostlund SCF software from the book Modern Quantum Chemistry.\n");
+  printf("\n*****Version 1.0. C version created by Paul Murphy pm133@hotmail.co.uk*****\n");
 
-	if(print_level == PRINT_ALL)
-	{
-		printf("\n\nPrint option selected: ALL\n");
-	}
-	else
-	{
-		printf("\n\nPrint option selected %d\n", print_level);
-	}
-	
+  if(print_level == PRINT_ALL)
+  {
+    printf("\n\nPrint option selected: ALL\n");
+  }
+  else
+  {
+    printf("\n\nPrint option selected %d\n", print_level);
+  }
+  
     printf("\nSelected Basis Set is STO-%dG for nuclei %.1f and %.1f\n", sto_ng, za, zb);
-	
-	//Calculate the one and two electron integrals
-	calc_integrals();
+  
+  //Calculate the one and two electron integrals
+  calc_integrals();
 
-	//Put all integrals in nice arrays simply for illustration
-	format_integrals();
+  //Put all integrals in nice arrays simply for illustration
+  format_integrals();
 
-	//Finally perform the SCF calculation
-	perform_scf();
+  //Finally perform the SCF calculation
+  perform_scf();
 
-	printf("\n\n**********End of Calculation**********\n");
+  printf("\n\n**********End of Calculation**********\n");
 }

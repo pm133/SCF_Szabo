@@ -20,7 +20,7 @@
 #OBJS = main.o calc_integrals.o format_integrals.o perform_scf.o
 
 scf_basic_version_1_0: main.c calc_integrals.c format_integrals.c perform_scf.c
-	gcc -o scf_basic_version_1_0 main.c calc_integrals.c format_integrals.c perform_scf.c -I. -lm
+  gcc -o scf_basic_version_1_0 main.c calc_integrals.c format_integrals.c perform_scf.c -I. -lm
 
  
 
